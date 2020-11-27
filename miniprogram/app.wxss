@@ -1,0 +1,42 @@
+/**app.wxss**/
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 200rpx 0; */
+  box-sizing: border-box;
+}
+
+.page-body {
+  width: 100%;
+}
+
+.page-section {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+.page-body-title {
+  font-size: 20px;
+  line-height: 100px;
+}
+.page-body-text {
+  color: #bbb;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0 0 20px 0;
+  text-align: center;
+}
+.page-body-button {
+  width: 100%;
+  margin: 0 0 20px 0;
+  /* font-size: 12px; */
+}

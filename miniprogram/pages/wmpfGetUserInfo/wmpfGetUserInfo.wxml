@@ -1,0 +1,82 @@
+<view class="container">
+  <!-- <view class="page-body"> -->
+    <view class="page-section">
+      <text class="page-body-title">用户信息(wx.getUserInfo)</text>
+      <view class="page-body-info">
+        <block wx:if="{{hasUserInfo === false}}">
+          <text class="page-body-text">点击绿色按钮可获取用户头像及昵称</text>
+        </block>
+        <block wx:if="{{hasUserInfo === true}}">
+          <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}"></image>
+          <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+        </block>
+      </view>
+      <view class="btn-area">
+        <button class="page-body-button" type="primary" open-type="getUserInfo" bindgetuserinfo="getUserInfo">获取用户信息</button>
+        <button class="page-body-button" bindtap="clear">清空</button>
+      </view>
+    </view>
+  <!-- </view> -->
+</view>
+
+<view class="container">  
+  <view class="page-body">
+    <form>
+      <view class="page-section">
+        <text class="page-body-title">用户信息(open-data)</text>
+        <view class="avatar">
+          <open-data class="avatar-img" type="userAvatarUrl" lang="zh_CN"></open-data>
+        </view>
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__hd">
+              <view class="weui-label">昵称</view>
+            </view>
+            <view class="weui-cell__bd">
+              <view class="weui-input">
+                <open-data type="userNickName" lang="zh_CN"></open-data>
+              </view>
+            </view>
+          </view>
+
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__hd">
+              <view class="weui-label">性别</view>
+            </view>
+            <view class="weui-cell__bd">
+              <view class="weui-input">
+                <open-data type="userGender" lang="zh_CN"></open-data>
+              </view>
+            </view>
+          </view>
+
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__hd">
+              <view class="weui-label">地区</view>
+            </view>
+            <view class="weui-cell__bd">
+              <view class="weui-input">
+                <open-data class="country" type="userCountry" lang="zh_CN"></open-data>
+                <open-data class="province" type="userProvince" lang="zh_CN"></open-data>
+                <open-data class="city" type="userCity" lang="zh_CN"></open-data>
+              </view>
+            </view>
+          </view>
+
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__hd">
+              <view class="weui-label">语言</view>
+            </view>
+            <view class="weui-cell__bd">
+              <view class="weui-input">
+                <open-data type="userLanguage" lang="zh_CN"></open-data>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </form>
+
+  </view>
+  
+</view>

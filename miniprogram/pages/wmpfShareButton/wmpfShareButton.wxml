@@ -1,0 +1,12 @@
+<view class="container">
+  <view class="page-body">
+    <view class="page-section">
+      <text class="page-body-title">转发分享</text>
+      <block>
+        <text class="page-body-text">轻触下方图标即可转发</text>
+        <button bindtap="handleTapShareButton" open-type="share" class="button-share" id="share-button"></button>
+        <label for="share-button"><image style="width: 27px; height: 27px" src="../../images/share.png" /></label>
+      </block>
+    </view>
+  </view>
+</view>

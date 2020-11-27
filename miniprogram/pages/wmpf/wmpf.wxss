@@ -1,0 +1,39 @@
+.page-section {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  /* padding: 0 25px; */
+  box-sizing: border-box;
+}
+.page-body-title {
+  font-size: 30px;
+  line-height: 100px;
+}
+.page-body-text {
+  color: #bbb;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0 0 20px 0;
+  text-align: center;
+}
+.page-body-button {
+  width: 100%;
+  margin: 0 0 20px 0;
+}
+
+.page-body-info {
+  padding-bottom: 0;
+  height: 230px;
+}
+.userinfo-avatar {
+  border-radius: 114px;
+  width: 114px;
+  height: 114px;
+}
+.userinfo-nickname {
+  margin-top: 10px;
+  font-size: 19px;
+}

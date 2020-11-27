@@ -1,0 +1,15 @@
+<view class="container">
+
+  <view class="page-body">
+    <view class="page-section">
+      <button class="page-body-button" type="primary" bindtap="wmpfLogin">微信登录</button>
+      <button class="page-body-button" type="primary" bindtap="wmpfFacePay">刷脸支付</button>
+      <button class="page-body-button" type="primary" bindtap="wmpfInvokeChannel">WMPF专有接口</button>
+      <button class="page-body-button" type="primary" bindtap="wmpfGetUserInfo">获取用户信息</button>
+      <button class="page-body-button" type="primary" bindtap="wmpfGetPhoneNumber">获取用户手机号</button>
+      <button class="page-body-button" type="primary" bindtap="wmpfShareButton">转发分享</button>
+      <button class="page-body-button" type="primary" bindtap="wmpfSubscribeMessage">订阅消息</button>
+    </view>
+  </view>
+  
+</view>

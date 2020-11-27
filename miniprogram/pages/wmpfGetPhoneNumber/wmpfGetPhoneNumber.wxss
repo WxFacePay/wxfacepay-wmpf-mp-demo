@@ -1,0 +1,20 @@
+.page-body-info {
+  padding-bottom: 0;
+  height: 230px;
+}
+.userinfo-avatar {
+  border-radius: 114px;
+  width: 114px;
+  height: 114px;
+}
+.userinfo-phonenumber {
+  width: 100%;
+  margin-top: 10px;
+  font-size: 19px;
+  display: block;
+  text-align: center;
+}
+
+.btn-area {
+  margin-top: 20px;
+}

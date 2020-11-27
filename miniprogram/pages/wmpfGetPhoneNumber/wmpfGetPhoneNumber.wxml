@@ -1,0 +1,25 @@
+<view class="container">
+  <view class="page-body">
+    <view class="page-section">
+      <text class="page-body-title">用户手机号</text>
+      <view class="page-body-info">
+        <block wx:if="{{hasLogin === false}}">
+          <text class="page-body-text">请先登录</text>
+        </block>
+        <block wx:if="{{hasLogin === true}}">
+          <block wx:if="{{hasPhoneNumber === false}}">
+            <text class="page-body-text">点击绿色按钮可申请获取用户手机号</text>
+            <text class="page-body-text"></text>
+          </block>
+          <block wx:if="{{hasPhoneNumber === true}}">
+            <text class="userinfo-phonenumber">{{phoneNumber}}</text>
+          </block>
+          <view class="btn-area">
+            <button class="page-body-button" type="primary" open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">获取手机号</button>
+            <button class="page-body-button" bindtap="clear">清空</button>
+          </view>
+        </block>
+      </view>      
+    </view>
+  </view>
+</view>

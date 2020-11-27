@@ -1,0 +1,16 @@
+<view class="container">
+  <view class="page-body">
+    <view class="page-section">
+      <text class="page-body-title">刷脸支付</text>
+      <block wx:if="{{hasLogin === false}}">
+        <text class="page-body-text">请先登录</text>
+      </block>
+      <block wx:if="{{hasLogin === true}}">
+        <text class="page-body-text">openid：{{user_openid}}</text>
+        <text class="page-body-text">faceCode：{{face_code}}</text>
+        <button class="page-body-button" type="primary" bindtap="getFaceCode">获取付款码</button>
+        <button class="page-body-button" type="primary" bindtap="passFaceCode">确认支付</button>
+      </block>
+    </view>
+  </view>
+</view>

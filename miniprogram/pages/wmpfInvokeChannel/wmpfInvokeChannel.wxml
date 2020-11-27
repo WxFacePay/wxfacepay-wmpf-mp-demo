@@ -1,0 +1,19 @@
+<view class="container">
+  <view class="page-body">
+    <view class="page-section">
+      <text class="page-body-title">WMPF专有接口</text>
+
+      <text class="page-body-text">设备序列号：{{sn}}</text>
+
+      <button class="page-body-button" type="primary" bindtap="getDeviceSerialNumber">获取设备序列号(getDeviceSerialNumber)</button>
+
+      <text class="page-body-text">收到事件({{eventListenState == 1 ? '监听中' : '未监听'}})：{{event}}</text>
+      <button class="page-body-button" type="primary" bindtap="startListenEvent">开启监听事件(wmpf.Channel.on)</button>
+      <button class="page-body-button" type="primary" bindtap="stopListenEvent">停止监听事件(wmpf.Channel.off)</button>
+      
+      <text class="page-body-text">调用结果：{{invokeResult}}</text>
+      <button class="page-body-button" type="primary" bindtap="invoke">异步调用商户应用的接口(invoke)</button>
+      <button class="page-body-button" type="primary" bindtap="invokeSync">同步调用商户应用的接口(invokeSync)</button>
+    </view>
+  </view>
+</view>
